@@ -5,7 +5,7 @@
 
 using namespace std;
 
-long candies(int n, vector<int> arr) {
+long long candies(int n, vector<int> arr) {
   vector<long> results(n);
   results[0] = 1;
   for (size_t i = 1; i != n; ++i) {

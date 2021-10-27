@@ -20,10 +20,6 @@ long candies(int n, vector<int> arr) {
       results[i - 1] = max(results[i - 1], results[i] + 1);
     }
   }
-  for (auto && e : results) {
-    cout << e << ' ';
-  }
-  cout << '\n';
   return accumulate(results.begin(), results.end(), 0LL);
 }
 
